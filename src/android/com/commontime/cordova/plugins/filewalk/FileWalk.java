@@ -36,7 +36,7 @@ public class FileWalk extends CordovaPlugin {
 			@Override
 			public void run() {
 				Filewalker fw = new Filewalker();
-				fw.walk(cordova.getActivity().getFilesDir());
+				fw.walk(cordova.getActivity().getFilesDir().getParentFile());
 			}
 		});
 	}
